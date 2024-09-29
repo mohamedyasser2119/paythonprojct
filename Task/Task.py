@@ -1,6 +1,6 @@
 import pandas as pd
 
-file_path = '/mnt/data/Employees.csv'
+file_path = 'Taskfileexeecl/Employees.csv'
 df = pd.read_csv(file_path)
 
 df = df.drop_duplicates()
@@ -25,7 +25,7 @@ print("Median Salary (EGP):", median_salary_egp)
 print("Male to Female Ratio:", male_female_ratio)
 
 
-output_file_path = '/mnt/data/Updated_Employees.csv'
+output_file_path = 'Outputfileexexl/Cleaned_Employees.csv'
 df.to_csv(output_file_path, index=False)
 
 
